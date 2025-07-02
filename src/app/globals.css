@@ -37,3 +37,9 @@ body {
   left: 0;
   z-index: 1;
 }
+
+@media (prefers-color-scheme: dark) {
+  .leaflet-tile-pane {
+    filter: invert(100%) hue-rotate(180deg) brightness(95%) contrast(90%);
+  }
+}
