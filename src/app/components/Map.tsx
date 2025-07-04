@@ -1,6 +1,7 @@
 'use client';
 import React, { useEffect } from 'react';
 import { MapContainer, Marker, Popup, TileLayer } from "react-leaflet";
+import CustomMarker from './CustomMarker';
 
 export default function Map() {
   useEffect(() => {
@@ -15,16 +16,16 @@ export default function Map() {
         attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
         url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
       />
-      <Marker position={[37.09, -92.02]}>
+      <CustomMarker position={[37.09, -92.02]}>
         <Popup>
           This is a popup
         </Popup>
-      </Marker>
-      <Marker position={[19.420, -99.138]}>
+      </CustomMarker>
+      <CustomMarker position={[19.420, -99.138]}>
         <Popup>
           This is a popup
         </Popup>
-      </Marker>
+      </CustomMarker>
     </MapContainer>
   );
 }
