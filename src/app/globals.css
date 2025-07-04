@@ -39,5 +39,10 @@ body {
 }
 
 .leaflet-tile-pane {
-  filter: invert(100%) hue-rotate(180deg) brightness(95%) contrast(90%);
+  filter: invert(90%) hue-rotate(180deg) brightness(95%) contrast(100%);
+}
+
+.leaflet-popup-content-wrapper {
+  background: #333 !important;
+  color: #fff !important;
 }

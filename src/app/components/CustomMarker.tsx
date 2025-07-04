@@ -11,7 +11,7 @@ interface CustomMarkerProps {
 const CustomMarker: React.FC<CustomMarkerProps> = ({ position, children }) => {
   const customIcon = L.icon({
     iconUrl: MakrerUrl.src,
-    iconSize: [35, 35],
+    iconSize: [25, 25],
     iconAnchor: [20, 20],
   });
 
