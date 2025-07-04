@@ -1,6 +1,6 @@
 'use client';
 import React, { useEffect } from 'react';
-import { MapContainer, Marker, Popup, TileLayer } from "react-leaflet";
+import { MapContainer, Popup, TileLayer } from "react-leaflet";
 import CustomMarker from './CustomMarker';
 
 export default function Map() {
